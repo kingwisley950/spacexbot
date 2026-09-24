@@ -1,9 +1,9 @@
 
-flask==2.3.3
-gunicorn==21.2.0
-Flask-SQLAlchemy==3.1.1
-SQLAlchemy==2.0.23
-qrcode==7.4.2
-pillow==10.1.0
-requests==2.31.0
-pycrptodome==3.19.0
+flask
+gunicorn
+Flask-SQLAlchemy
+SQLAlchemy
+qrcode
+pillow
+requests
+pycrptodome
