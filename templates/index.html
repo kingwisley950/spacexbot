@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SpaceXBot Hub</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<nav class="navbar">
+
+<div class="logo">
+<img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo">
+<span>SpaceXBot Hub</span>
+</div>
+
+<ul class="nav-links">
+<li><a href="/">Home</a></li>
+<li><a href="/pair">Pair</a></li>
+<li><a href="/dashboard">Dashboard</a></li>
+<li><a href="/contact">Contact</a></li>
+<li><a href="/login">Login</a></li>
+<li><a href="/register">Register</a></li>
+</ul>
+
+<a href="/deployment" class="deploy-btn">Deploy Now</a>
+
+</nav>
+
+<header class="hero">
+
+<div class="overlay"></div>
+
+<div class="hero-content">
+
+<h4>WELCOME TO</h4>
+
+<h1>SpaceXBot Hub</h1>
+
+<p>
+Deploy, Pair and Manage your WhatsApp Bots
+from one powerful dashboard.
+</p>
+
+<div class="hero-buttons">
+
+<a href="/pair" class="btn">Pair Bot</a>
+
+<a href="/deployment" class="btn2">Deploy Now</a>
+
+</div>
+
+</div>
+
+</header>
+
+<section class="services">
+
+<h2>What We Do</h2>
+
+<div class="services-grid">
+
+<div class="service-card">
+<i class="fas fa-robot"></i>
+<h3>Bot Deployment</h3>
+<p>Deploy your WhatsApp bot quickly and securely with reliable hosting.</p>
+</div>
+
+<div class="service-card">
+<i class="fas fa-link"></i>
+<h3>Pair Code</h3>
+<p>Generate secure Pair Codes instantly.</p>
+</div>
+
+<div class="service-card">
+<i class="fas fa-qrcode"></i>
+<h3>QR Pairing</h3>
+<p>Pair your bot easily using QR Code.</p>
+</div>
+
+<div class="service-card">
+<i class="fas fa-server"></i>
+<h3>High-Speed Servers</h3>
+<p>Choose the fastest available server on the Pair page.</p>
+</div>
+
+<div class="service-card">
+<i class="fas fa-shield-alt"></i>
+<h3>Secure Hosting</h3>
+<p>Your sessions and deployments are protected.</p>
+</div>
+
+<div class="service-card">
+<i class="fas fa-headset"></i>
+<h3>24/7 Support</h3>
+<p>Get help anytime through our support team.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="reviews">
+
+<h2>What Our Users Say</h2>
+
+<div class="reviews-grid">
+
+<div class="review-card">
+<h3>⭐⭐⭐⭐⭐</h3>
+<p>"SpaceXBot Hub made deploying my bot incredibly easy. The dashboard is clean and fast."</p>
+<h4>- Kevin M.</h4>
+</div>
+
+<div class="review-card">
+<h3>⭐⭐⭐⭐⭐</h3>
+<p>"The pairing process was smooth, and the servers are very reliable."</p>
+<h4>- Sarah W.</h4>
+</div>
+
+<div class="review-card">
+<h3>⭐⭐⭐⭐⭐</h3>
+<p>"Excellent support team and a professional-looking platform."</p>
+<h4>- Daniel K.</h4>
+</div>
+
+</div>
+
+</section>
+
+<section class="stats">
+
+<h2>Platform Statistics</h2>
+
+<div class="stats-grid">
+
+<div class="stat-card">
+<h1>2,500+</h1>
+<p>Bots Deployed</p>
+</div>
+
+<div class="stat-card">
+<h1>1,800+</h1>
+<p>Active Users</p>
+</div>
+
+<div class="stat-card">
+<h1>99.9%</h1>
+<p>Server Uptime</p>
+</div>
+
+<div class="stat-card">
+<h1>5</h1>
+<p>Global Pairing Servers</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="faq">
+
+<h2>Frequently Asked Questions</h2>
+
+<div class="faq-container">
+
+<div class="faq-item">
+<h3>How do I pair my bot?</h3>
+<p>Open the Pair page, choose a server, then use either Pair Code or QR Code.</p>
+</div>
+
+<div class="faq-item">
+<h3>Where do I pay for deployment?</h3>
+<p>Payments are only available on the Deployment page after selecting your deployment plan.</p>
+</div>
+
+<div class="faq-item">
+<h3>Which payment methods are supported?</h3>
+<p>We support M-Pesa, Airtel Money and PayPal.</p>
+</div>
+
+<div class="faq-item">
+<h3>Can I change servers?</h3>
+<p>Yes. During pairing, you can choose the server that best suits your needs.</p>
+</div>
+
+</div>
+
+</section>
+
+<footer class="footer">
+
+<div class="footer-container">
+
+<div class="footer-box">
+<h2>🚀 SpaceXBot Hub</h2>
+<p>
+The ultimate platform for pairing, deploying and managing WhatsApp bots with speed, security and reliability.
+</p>
+</div>
+
+<div class="footer-box">
+<h3>Quick Links</h3>
+<ul>
+<li><a href="/">Home</a></li>
+<li><a href="/pair">Pair Bot</a></li>
+<li><a href="/deployment">Deployment</a></li>
+<li><a href="/dashboard">Dashboard</a></li>
+<li><a href="/login">Login</a></li>
+</ul>
+</div>
+
+<div class="footer-box">
+<h3>Contact</h3>
+<p>📧 support@spacexbot.com</p>
+<p>🏢 SpaceXBot Technologies</p>
+<p>🌍 Nairobi, Kenya</p>
+</div>
+
+<div class="footer-box">
+<h3>Follow Us</h3>
+<div class="socials">
+<a href="#"><i class="fab fa-facebook"></i></a>
+<a href="#"><i class="fab fa-telegram"></i></a>
+<a href="#"><i class="fab fa-instagram"></i></a>
+<a href="#"><i class="fab fa-youtube"></i></a>
+</div>
+</div>
+
+</div>
+
+<div class="copyright">
+<p>© 2026 SpaceXBot Hub. All Rights Reserved.</p>
+</div>
+
+</footer>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>SpaceXBot Dashboard</title>
+
+<style>
+
+.sidebar{
+position:fixed;
+left:0;
+top:0;
+width:240px;
+height:100%;
+background:#111827;
+padding:20px;
+}
+
+.sidebar h2{
+color:#38bdf8;
+margin-bottom:30px;
+}
+
+.sidebar a{
+display:block;
+padding:12px;
+color:white;
+text-decoration:none;
+margin-bottom:10px;
+border-radius:8px;
+}
+
+.sidebar a:hover{
+background:#2563eb;
+}
+
+.main{
+margin-left:260px;
+}
+
+O
+
+O
+body{
+background:#0b1120;
+color:white;
+font-family:Arial,sans-serif;
+margin:0;
+}
+
+.header{
+background:#111827;
+padding:20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+font-size:26px;
+font-weight:bold;
+color:#38bdf8;
+}
+
+.container{
+padding:25px;
+}
+
+.card{
+background:#1e293b;
+padding:20px;
+border-radius:15px;
+margin-bottom:20px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+.button{
+display:inline-block;
+padding:12px 25px;
+background:#2563eb;
+color:white;
+text-decoration:none;
+border-radius:10px;
+margin-top:10px;
+}
+
+.status{
+color:#22c55e;
+font-weight:bold;
+}
+
+</style>
+
+</head>
+<a href="/logout" class="button">Logout</a>
+
+<body>
+
+<div class="sidebar">
+
+<h2>🚀 SpaceXBot</h2>
+
+<a href="/dashboard">🏠 Dashboard</a>
+
+<a href="/deployment">🚀 Deployment</a>
+
+<a href="/pair">🔗 Pair Bot</a>
+
+<a href="/profile">👤 Profile</a>
+
+<a href="/payment">💳 Payments</a>
+
+<a href="/contact">📞 Support</a>
+
+<a href="/logout">🚪 Logout</a>
+
+</div>
+
+<div class="main">
+
+<div class="header">
+
+<div class="logo">
+🚀 SpaceXBot
+</div>
+
+<div>
+Welcome {{ username }}
+</div>
+
+</div>
+
+<div class="container">
+
+<div class="card">
+
+<h2>👋 Welcome to SpaceXBot Hub</h2>
+
+<p><strong>Subscription:</strong> Free Account</p>
+
+<p><strong>Deployment Status:</strong>
+<span class="status">
+No Active Deployment
+</span>
+</p>
+
+<p><strong>Pair Status:</strong> Not Connected</p>
+
+<p><strong>Account Type:</strong> Standard User</p>
+
+<p><strong>Last Login:</strong> Today</p>
+
+<a href="/deployment" class="button">Upgrade Plan</a>
+
+</div>
+
+<div class="grid">
+
+<div class="card">
+<h3>🤖 Pair Bot</h3>
+<p>Connect your WhatsApp bot.</p>
+<a href="/pair" class="button">Open</a>
+</div>
+
+<div class="card">
+<h3>🚀 Deploy Bot</h3>
+<p>Purchase a deployment package.</p>
+<a href="/deployment" class="button">Deploy</a>
+</div>
+
+<div class="card">
+<h3>💳 Payments</h3>
+<p>View your payment history.</p>
+</div>
+
+<div class="card">
+<h3>⚙ Account</h3>
+<p>Edit your profile and settings.</p>
+</div>
+
+</div>
+
+</div>
+
+<div class="container">
+
+<h2>Control Center</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>📜 Deployment History</h3>
+<p>No deployments yet.</p>
+</div>
+
+<div class="card">
+<h3>💰 Payment History</h3>
+<p>No payments available.</p>
+</div>
+
+<div class="card">
+<h3>🔔 Notifications</h3>
+<p>You have 0 new notifications.</p>
+</div>
+
+<div class="card">
+<h3>🛡 Security Center</h3>
+<p>Your account is fully protected.</p>
+</div>
+
+<div class="card">
+<h3>📈 Analytics</h3>
+<p>Deployments: 0</p>
+<p>Pair Sessions: 0</p>
+</div>
+
+<div class="card">
+<h3>🎁 Referral Rewards</h3>
+<p>Invite friends and earn free deployment days.</p>
+</div>
+
+<div class="card">
+<h3>💬 Live Support</h3>
+<a href="/contact" class="button">Contact Support</a>
+</div>
+
+<div class="card">
+<h3>⚙ Quick Actions</h3>
+
+<a href="/pair" class="button">Pair Bot</a><br><br>
+
+<a href="/deployment" class="button">Deploy Bot</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="quick-actions">
+
+<h2>⚡ Quick Actions</h2>
+
+<div class="action-grid">
+
+<a href="/pair" class="action-card">
+<i class="fas fa-link"></i>
+<h3>Pair Bot</h3>
+</a>
+
+<a href="/deployment" class="action-card">
+<i class="fas fa-rocket"></i>
+<h3>Deploy Bot</h3>
+</a>
+
+<a href="#" class="action-card">
+<i class="fas fa-sync-alt"></i>
+<h3>Restart Bot</h3>
+</a>
+
+<a href="#" class="action-card">
+<i class="fas fa-download"></i>
+<h3>Download Session</h3>
+</a>
+
+</div>
+
+</div>
+
+<div class="activity">
+
+<h2>📜 Recent Activity</h2>
+
+<h2>My Deployments</h2>
+
+<table border="1" cellpadding="10">
+    <tr>
+        <th>Bot Name</th>
+        <th>Plan</th>
+        <th>Payment</th>
+        <th>Status</th>
+    </tr>
+
+    {% for deploy in deployments %}
+    <tr>
+        <td>{{ deploy.bot_name }}</td>
+        <td>{{ deploy.plan }}</td>
+        <td>{{ deploy.payment }}</td>
+        <td>{{ deploy.status }}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+<table>
+
+<tr>
+<th>Date</th>
+<th>Activity</th>
+<th>Status</th>
+</tr>
+
+<tr>
+<td>30 Jul 2026</td>
+<td>Account Created</td>
+<td><span class="success">Completed</span></td>
+</tr>
+
+<tr>
+<td>--</td>
+<td>No Deployments Yet</td>
+<td><span class="pending">Pending</span></td>
+</tr>
+
+</table>
+
+</div>
+
+</div>
+
+</body>
+</html>
+
+

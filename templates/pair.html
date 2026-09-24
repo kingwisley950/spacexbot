@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Pair Bot | SpaceXBot Hub</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/pair.css') }}">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🔗 Pair Your Bot</h1>
+
+<p>Select a server and connect your WhatsApp bot.</p>
+
+<div class="server-section">
+
+<h2>🌍 Select Server</h2>
+
+<select>
+
+<option>🇩🇪 Germany</option>
+<option>🇺🇸 USA</option>
+<option>🇸🇬 Singapore</option>
+<option>🇮🇳 India</option>
+<option>🇿🇦 South Africa</option>
+
+</select>
+
+</div>
+
+<div class="pair-options">
+
+<div class="pair-card">
+
+<i class="fas fa-link"></i>
+
+<h3>Pair Code</h3>
+
+<p>Generate an 8-digit pairing code.</p>
+
+<form action="/generate_qr" method="POST">
+
+<button type="submit">
+
+<form action="/generate_pair" method="POST">
+
+<label>WhatsApp Number</label>
+
+{% if result %}
+
+<div class="pair-result">
+
+<h3>{{ result.message }}</h3>
+
+{% if result.success %}
+<p>Phone: {{ result.phone }}</p>
+{% endif %}
+
+</div>
+
+{% endif %}
+
+<input
+type="text"
+name="phone"
+placeholder="254712345678"
+required
+>
+
+<button type="submit">
+Generate Pair Code
+</button>
+
+</form>
+
+Generate Qr Code
+</button>
+
+</form>
+
+</div>
+
+<div class="pair-card">
+
+<i class="fas fa-qrcode"></i>
+
+<h3>QR Pairing</h3>
+
+<p>Scan a QR Code using WhatsApp.</p>
+
+<form action="/generate_qr" method="POST">
+
+<button type="submit">
+Generate QR Code
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+
+</html>
+
+
