@@ -1,4 +1,8 @@
+
 flask
-gunicorn
 Flask-SQLAlchemy
 SQLAlchemy
+qrcode
+pillow
+requests
+pycryptodome
