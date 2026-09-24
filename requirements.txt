@@ -6,4 +6,4 @@ SQLAlchemy
 qrcode
 pillow
 requests
-pycrptodome
+pycryptodome
